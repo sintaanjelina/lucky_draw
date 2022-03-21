@@ -1,0 +1,7 @@
+Requirements:
+1. Deadline before 2 april 2022 (12 hari)
+2. Acak nomor undian dan pop up nama pemenang beserta nomor undiannya
+3. Data pemenang disimpan dan bisa diexport dalam bentuk excel
+4. Visual customizeable bisa ganti background dan logo
+5. Input data peserta undian dalam bentuk csv / excel
+6. Bebas web / desktop app
