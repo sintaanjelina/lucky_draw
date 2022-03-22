@@ -3,3 +3,11 @@
 body {
   font-family: "Poppins", sans-serif !important;
 }
+
+.navbar-nav{
+  background-color: white;
+  bottom: 0;
+}
+.navbar-nav .active>.nav-link{
+  text-decoration: underline;
+}

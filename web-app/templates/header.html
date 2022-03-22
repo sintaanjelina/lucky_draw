@@ -13,15 +13,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}" />
 
-
     <!-- Jquery -->
     <script src="{{url_for('static', filename='/assets/js/jquery.min.js')}}"></script>
     <script src="{{url_for('static', filename='/assets/js/jquery-3.5.1.js')}}"></script>
     <script src="{{url_for('static', filename='/assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{url_for('static', filename='/assets/js/jquery.dataTables.min.js')}}"></script>
     <script src="{{url_for('static', filename='/assets/js/dataTables.bootstrap4.min.js')}}"></script>
-
-
 
     <!-- styles CSS -->
     <link rel="stylesheet" href="{{url_for('static', filename='/assets/css/index.css')}}">
@@ -51,8 +48,20 @@
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link text-wide" href="{{url_for('index')}}">Home</a>
+                        <li class="nav-item  {{ 'active' if data == '/beranda' else '' }}">
+                            <a class="nav-link text-wide " href="{{url_for('home')}}">Beranda</a>
+                        </li>
+                        <li class="nav-item {{ 'active' if data == '/peserta' else '' }}">
+                            <a class="nav-link text-wide " href="{{url_for('participant')}}">Peserta</a>
+                        </li>
+                        <li class="nav-item {{ 'active' if data == '/hadiah' else '' }}">
+                            <a class="nav-link text-wide " href="{{url_for('reward')}}">Hadiah</a>
+                        </li>
+                        <li class="nav-item  {{ 'active' if data == '/pemenang' else '' }}">
+                            <a class="nav-link text-wide" href="{{url_for('winner')}}">Pemenang</a>
+                        </li>
+                        <li class="nav-item  {{ 'active' if data == '/undian' else '' }}">
+                            <a class="nav-link text-wide" href="{{url_for('lucky_draw')}}">Mulai Undian</a>
                         </li>
                     </ul>
                 </div>
