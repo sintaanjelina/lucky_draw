@@ -1,2 +1,41 @@
 {% include 'header.html'%}
+<main>
+    <div class="container px-4 border">
+        <h5 class="pt-5 pb-4 ">Detail Acara</h5>
+        <form id="event-details">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="input-event-name">Nama acara</label>
+                    <input type="text" class="form-control" id="input-event-name">
+                </div>
+                <div class="form-group">
+                    <label for="input-event-period">Periode acara (bulan ke-)</label>
+                    <input type="number" class="form-control" id="input-event-period" min="1" max="12" placeholder="1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="input-event-logo-info">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="input-event-logo"
+                            aria-describedby="input-event-logo-info" accept="image/jpg,image/jpeg, image/png">
+                        <label class="custom-file-label" for="input-event-logo">Logo Acara</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="input-event-bg-info">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="input-event-bg"
+                            aria-describedby="input-event-bg-info" accept="image/jpg,image/jpeg, image/png">
+                        <label class="custom-file-label" for="input-event-bg">Tema Background Acara</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="my-5 btn  btn-block btn-info">Berikutnya</button>
+            </div>
+        </form>
+    </div>
+</main>
 {% include 'footer.html'%}
