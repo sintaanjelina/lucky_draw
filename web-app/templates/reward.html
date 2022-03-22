@@ -1,2 +1,41 @@
 {% include 'header.html'%}
+<main>
+    <div class="container px-5 border">
+        <h5 class="pt-5 ">Pengaturan Hadiah</h5>
+        <div class="row pt-3 ">
+            <div class="col">
+                <h6>*** Data Jenis hadiah</h6>
+            </div>
+            <div class="col text-right">
+                <button type="button" class="btn btn-info" href="">
+                    <i class="fa fa-plus"></i>
+                    Tambah hadiah</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive-sm valueresult  my-3">
+                <table class="table-sm" id="table-reward-category">
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h6>*** Jumlah pemenang</h6>
+            </div>
+            <form>
+                <div class="col-sm-12">
+                    <input type="number" class="form-control" id="input-num-winner" min="1" placeholder="1">
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="table-responsive-sm valueresult  my-3">
+                <table class="table-sm" id="table-setting-winner-reward">
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</main>
 {% include 'footer.html'%}
