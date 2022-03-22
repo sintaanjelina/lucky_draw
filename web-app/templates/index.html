@@ -40,38 +40,47 @@
                 <div class="row">
                     <div class="col">
                         <div class="text-center">
-                            <img class="img-fluid" style="min-width:20px;"
+                            <img width="90" class="img-fluid" style="min-width:20px;"
                                 src="{{ url_for('static', filename='assets/img/login_logo.png')}}" id='loading' />
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col col-md-5 col-xl-5 col-sm-10 py-4 border border-black">
+                        <h3 class="text-center pb-3">Masuk ke Akun Anda</h3>
                         <form id="login">
                             <div class="mb-3 ">
-                                <label for="username" class="form-label">Username</label>
+                                <label for="username" class="form-label">Nama pengguna</label>
                                 <input type="text" class="form-control" id="username">
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
+                                <label for="password" class="form-label">Sandi</label>
                                 <input type="password" class="form-control" id="password">
                             </div>
                             <!-- <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div> -->
-                            <button type="submit" class="btn mt- btn-block btn-lg btn-primary">Submit</button>
+                            <button type="submit" class="btn mt- btn-block btn-lg btn-primary">Masuk</button>
                         </form>
+                        <div class="container">
+                            <div class="row my-4">
+                                <div class="col text-left">
+                                    <a href="" class="">Buat Akun</a>
+                                </div>
+                                <div class="col text-right">
+                                    <a href="" class="text-muted"> Lupa sandi? </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p class="text-center text-muted">@<span id="year"></span> <span id="developer-name"></span> development. All
-            rights
-            reserved.</p>
+    <footer class="my-0 py-0">
+        <p class="text-center text-muted">@<span id="year"></span> Developed by <span id="developer-name"></span> </p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
