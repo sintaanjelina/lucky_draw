@@ -1,2 +1,27 @@
 {% include 'header.html'%}
+<main>
+    <div class="container border">
+        <div class="row pt-5 px-2">
+            <div class="col">
+                <h5>Data Peserta</h5>
+            </div>
+            <div class="col text-right">
+                <button type="button" class="btn btn-info" href="">
+                    <i class="fa fa-plus"></i>
+                    Upload</button>
+                <button type="button" class="btn btn-danger" href="">
+                    <i class="fa fa-trash"></i>
+                    Hapus
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive-sm valueresult  my-3">
+                <table class="table-sm" id="table-participant">
+                </table>
+            </div>
+        </div>
+    </div>
+
+</main>
 {% include 'footer.html'%}
