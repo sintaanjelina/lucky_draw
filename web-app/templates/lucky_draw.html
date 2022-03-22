@@ -1,2 +1,32 @@
 {% include 'header.html'%}
+<main>
+    <div class="container px-4 border">
+        <h5 class="pt-5 pb-4 ">Pengaturan undian</h5>
+        <form id="lucky-draw-activation">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="input-mode">Mode undian</label>
+                    <select class="form-control" id="input-mode">
+                        <option>Manual</option>
+                        <option selected>Otomatis</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mode">Lama waktu per putaran undian otomatis (detik)</label>
+                    <input type="number" class="form-control" id="input-time-draw" min="1" placeholder="1">
+                </div>
+                <div class="form-group">
+                    <label for="input-type">Jenis undian</label>
+                    <select class="form-control" id="input-type">
+                        <option>Spinning Wheel</option>
+                        <option selected>Random Number Picker</option>
+                        <option>Shaking Box</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="my-5 btn  btn-block btn-primary">Mulai Undian</button>
+            </div>
+        </form>
+    </div>
+</main>
 {% include 'footer.html'%}
