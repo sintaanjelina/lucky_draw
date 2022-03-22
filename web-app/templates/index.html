@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -5,9 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undian</title>
+
+    <!-- datatables CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='/assets/css/dataTables.bootstrap4.min.css')}}" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}" />
+
+
+    <!-- Jquery -->
+    <script src="{{url_for('static', filename='/assets/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='/assets/js/jquery-3.5.1.js')}}"></script>
+    <script src="{{url_for('static', filename='/assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='/assets/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{url_for('static', filename='/assets/js/dataTables.bootstrap4.min.js')}}"></script>
+
+
+
+    <!-- styles CSS -->
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='/assets/css/index.css')}}"> -->
+
+    <!-- Font Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/f2ee4a9353.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
+    <div class="loading" id="img" style="display: none;">
+        <img src="{{ url_for('static', filename='loading.gif')}}" id='loading' />"
+    </div>
+    <main>
+        <div class="jumbotron bg-white d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <img class="img-fluid" style="min-width:20px;"
+                                src="{{ url_for('static', filename='assets/img/login_logo.png')}}" id='loading' />
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col col-md-5 col-xl-5 col-sm-10 py-4 border border-black">
+                        <form id="login">
+                            <div class="mb-3 ">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <!-- <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div> -->
+                            <button type="submit" class="btn mt- btn-block btn-lg btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="text-center text-muted">@<span id="year"></span> <span id="developer-name"></span> development. All
+            rights
+            reserved.</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- styles JS -->
+    <script src="{{url_for('static', filename='/assets/js/index.js')}}"></script>
+
 </body>
 
 </html>
